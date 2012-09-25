@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/src/ABSTRACTCLASSES/ABSTRACT_PlayerEntity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\src\ABSTRACTCLASSES\ABSTRACT_PlayerEntity.cs">
     <Files>
-      <File FileName="Assets/src/ABSTRACTCLASSES/ABSTRACT_PlayerEntity.cs" Line="18" Column="24" />
+      <File FileName="Assets\src\ABSTRACTCLASSES\ABSTRACT_PlayerEntity.cs" Line="26" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
