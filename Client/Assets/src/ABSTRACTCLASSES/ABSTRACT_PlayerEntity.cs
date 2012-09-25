@@ -12,6 +12,12 @@ public class ABSTRACT_PlayerEntity : MonoBehaviour {
 		
 	}
 	
+	void __init__(int health, int armour)
+	{
+		this.health = health;
+		this.armour = armour;
+	}
+	
 	// Update is called once per frame
 	void Update () {
 	
