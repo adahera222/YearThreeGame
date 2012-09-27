@@ -3,13 +3,15 @@ using System.Collections;
 
 public class GameController : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	float timeScale = 1f;
 	
+	float getTimeScale()
+	{
+		return timeScale;	
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	void setTimeScale(float timeScale)
+	{
+		this.timeScale = timeScale;
 	}
 }
