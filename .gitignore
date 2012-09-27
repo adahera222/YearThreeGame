@@ -6,3 +6,5 @@ Client/[Oo]bj/
 Client/*.csproj
 Client/*.unityproj
 Client/*.sln
+Client/*.pidb
+Client/*.userprefs
