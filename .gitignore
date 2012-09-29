@@ -8,3 +8,7 @@ Client/*.unityproj
 Client/*.sln
 Client/*.pidb
 Client/*.userprefs
+
+#Trying to ignore :S
+Client/Client.userprefs
+Client/Assembly-CSharp.pidb
