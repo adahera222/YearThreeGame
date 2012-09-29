@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/src/GameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\src\ABSTRACTCLASSES\ABSTRACT_PlayerEntity.cs">
     <Files>
-      <File FileName="Assets/src/GameController.cs" Line="7" Column="27" />
+      <File FileName="Assets\src\PlayerController.cs" Line="15" Column="68" />
+      <File FileName="Assets\src\GameController.cs" Line="7" Column="27" />
+      <File FileName="Assets\src\ABSTRACTCLASSES\ABSTRACT_PlayerEntity.cs" Line="10" Column="73" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

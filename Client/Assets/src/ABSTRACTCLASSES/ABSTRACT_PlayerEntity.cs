@@ -7,7 +7,7 @@ public class ABSTRACT_PlayerEntity : MonoBehaviour {
 	int armour = 0;
 	int level = 0;
 	int xp = 0;
-	int xpToLevel = 0;
+	float xpToLevel = 0; // Had to float it due to Unity's Math.Pow method only returning floats :S
 	
 	void __init__(int health, int armour)
 	{
@@ -25,7 +25,7 @@ public class ABSTRACT_PlayerEntity : MonoBehaviour {
 	{
 		level++;
 		xp = 0;
-		xpToLevel = 200 + (Mathf.Pow(level + 5, 3)); // THIS WORKS ALRIGHTISH, SEE http://goo.gl/wB3r2
+		xpToLevel = 200f + (Mathf.Pow(level + 5, 3)); // THIS WORKS ALRIGHTISH, SEE http://goo.gl/wB3r2
 	}
 	
 	// GETTERS SETTERS
