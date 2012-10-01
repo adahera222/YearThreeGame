@@ -9,6 +9,10 @@ public class ABSTRACT_PlayerEntity : MonoBehaviour {
 	int xp = 0;
 	float xpToLevel = 0; // Had to float it due to Unity's Math.Pow method only returning floats :S
 	
+	string state = "normal"; // tags like hostile, attacking, falling, etc can be used to manage both AI and Animation
+	GameObject target = null; // Useful for AI targeting, player's targets could be for an autoaim system
+	GameObject objective = null; // Current event location
+	
 	void __init__(int health, int armour)
 	{
 		this.health = health;

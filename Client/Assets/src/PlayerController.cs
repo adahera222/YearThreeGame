@@ -6,8 +6,15 @@ public class PlayerController : ABSTRACT_PlayerEntity {
 	public float moveRate = 1f;
 	public float turnRate = 2f;
 	
-	void Update () {
+	private ArrayList skill = new ArrayList();
 	
+	void Update () {
+		movement();
+		abilities();
+	}
+	
+	void movement()
+	{
 		float vx = Input.GetAxis("Horizontal");
 		float vz = Input.GetAxis("Vertical");
 		float mx = Input.GetAxis("Mouse X");
@@ -20,5 +27,23 @@ public class PlayerController : ABSTRACT_PlayerEntity {
 		
 		// Rotate
 		transform.Rotate(new Vector3(0,mx * turnRate,0));
+	}
+	
+	void abilities()
+	{
+		// Keyboard keys 1->4
+		if (Input.GetKey(KeyCode.Alpha1))
+		{
+			// Do something
+		}
+		if (Input.GetKey(KeyCode.Alpha2))
+		{
+		}
+		if (Input.GetKey(KeyCode.Alpha3))
+		{
+		}
+		if (Input.GetKey(KeyCode.Alpha4))
+		{
+		}
 	}
 }
