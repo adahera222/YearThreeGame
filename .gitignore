@@ -1,4 +1,5 @@
-Client/[Ll]ibrary/
+# Attempt to fix map loading issues
+# Client/[Ll]ibrary/
 Client/[Tt]emp/
 Client/[Oo]bj/
 
