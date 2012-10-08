@@ -14,7 +14,7 @@ public class SkillMelee : ABSTRACT_Skill {
 	}
 	
 	// TODO: Finish this
-	private void use()
+	private void useSkill()
 	{
 		if (canUse)
 		{

@@ -7,10 +7,24 @@ public class PlayerController : ABSTRACT_PlayerEntity {
 	public float turnRate = 2f;
 	
 	private ArrayList skill = new ArrayList();
+
+	void Start()
+	{
+		// Set up the player at lvl 1, with 100 health/armour
+		__init__(1, 100, 100);
+	}
 	
 	void Update () {
+		logic();
 		movement();
 		abilities();
+		debugging();
+	}
+	
+	void logic()
+	{
+		if (xp > xpToLevel)
+			nextLevel();
 	}
 	
 	void movement()
@@ -31,7 +45,7 @@ public class PlayerController : ABSTRACT_PlayerEntity {
 	
 	void abilities()
 	{
-		// Keyboard keys 1->4
+		// Keyboard keys 1->4 (skills)
 		if (Input.GetKey(KeyCode.Alpha1))
 		{
 			// Do something
@@ -45,5 +59,17 @@ public class PlayerController : ABSTRACT_PlayerEntity {
 		if (Input.GetKey(KeyCode.Alpha4))
 		{
 		}
+	}
+	
+	void debugging()
+	{
+		if (Input.GetKey(KeyCode.Keypad0)) health--;
+		if (Input.GetKey(KeyCode.Keypad1)) health++;
+		if (Input.GetKey(KeyCode.Keypad4)) armour--;
+		if (Input.GetKey(KeyCode.Keypad7)) armour++;
+		if (Input.GetKey(KeyCode.Keypad6)) xp--;
+		if (Input.GetKey(KeyCode.Keypad9)) xp++;
+		if (Input.GetKeyDown(KeyCode.Keypad5)) nextLevel();
+		if (Input.GetKeyDown(KeyCode.Keypad8)) xp += 100;
 	}
 }

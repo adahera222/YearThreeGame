@@ -4,15 +4,36 @@ using System.Collections;
 public class GameController : MonoBehaviour {
 
 	float timeScale = 1f;
-	bool mutliplayer = false;
+	bool multiplayer, mouseVisable = false;
 	
-	float getTimeScale()
+	void Update()
+	{
+		// Hide the mouse
+		if (mouseVisable) 
+		{
+			Screen.showCursor = true;
+		} else {
+			Screen.showCursor = false;
+		}
+	}
+	
+	public float getTimeScale()
 	{
 		return timeScale;	
 	}
 	
-	void setTimeScale(float timeScale)
+	public void setTimeScale(float timeScale)
 	{
 		this.timeScale = timeScale;
+	}
+	
+	public void setMultiplayer(bool multiplayer)
+	{
+		this.multiplayer = multiplayer;
+	}
+	
+	public void setMouseVisable(bool mouseVisable)
+	{
+		this.mouseVisable = mouseVisable;
 	}
 }
