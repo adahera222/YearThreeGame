@@ -1,5 +1,169 @@
 YearThreeGame
 =============
+### TODO LIST:
+
+-----
+# WORK THIS WEEK (NOT USING THIS YET)
+
+* Prabhdeep
+* David
+* Andrew
+* Greg
+* Troy
+* Harvey
+* Jordan
+
+-----
+###Models:
+
+* Weapons
+	* Pistol Gun (Police/Criminal)
+	* Taser (Police/Hero)
+	* Baton (Police/Hero/Criminal)
+	* Knife (Criminal)
+* Characters 
+	* Hero Male 
+	* Hero Female
+	* NPC Male (Civilian) 
+	* NPC Female (Civilian)
+	* NPC Male (Criminal)
+	* NPC Female (Criminal)
+	* NPC Male(Police)
+	* NPC Female (Police)
+* Vehicles
+	* NPC Car
+	* NPC Police car 
+* General buildings (cannot enter)
+	* Enterable buildings
+	* Bank
+	* Shops
+	* Docks
+	* Bridges/Tunnels
+	* Train/Train Line
+	* Train Station
+* General assets
+	* Bins
+	* Street Lights
+	* Traffic Lights
+	* Fences
+	* Cages
+	* Pavements/Roads
+	* Buildings
+	* Bank
+	* Desk
+	* Chair
+	* Tills
+	* Queue dividers
+	* Vault
+	* Vault door
+	* combination lock
+	* safety deposit boxes
+	* shelves
+	* computers
+	* Shops:
+	* Aisles 
+	* Tills
+	* Docks
+	* Cranes
+	* Boats/Ships
+	* Cargo Crates
+	* Pier
+	* Train/Train Line
+	* Train Interior
+	* Seats
+	* Polls
+	* windows
+	* sliding doors
+	* Train Station
+	* support beams
+	* long chairs
+	* platform
+	* train track
+
+* Animation
+	* Stances / Positions
+	* Stand
+	* Crouch
+	* Surrendering
+	* Movements
+	* Walking
+	* Crouch walking
+	* Jump
+	* Crouch jump
+	* Holding hostage
+	* raising hands
+
+* Textures
+	* Weapons
+		* Piston gun(gray)
+		* Taser (Gray/ Yellow/Green)
+		* Baton(Black)
+		* Knife(Black Handle/Silver Blade)
+	* Characters
+		* Hero Male 
+		* Hero Male Injured
+		* Hero Female
+		* Hero Female Injured
+		* NPC Male (Civilian) 		(generic clothes)
+		* NPC Female (Civilian) 	(generic Clothes)
+		* NPC Male (Civilian) 		(bank Clothes)
+		* NPC Female (Civilian) 	(Bank Clothes)
+		* NPC Male (Civilian) 		(Shop Employee)
+		* NPC Female (Civilian) 	(shop Employee)
+		* NPC Male (civilian) 		(Dock Employee)
+		* NPC Female (Civilian)		(Dock Employee)
+		* NPC Male (Criminal)
+		* NPC Female (Criminal)
+		* NPC Male (Police)
+		* NPC Female (Police)
+	* Vehicles
+		* NPC Car (Civilian)
+		* NPC Police car (Police Car)
+
+* Outside Textures
+	* Road Tarmac + Road Lines
+	* Pavement Slabs
+	* Sides of Pavement bricks
+	* Brick walls
+	* Window Frames 
+	* Door + Door frames
+	* General Buildings:
+	* 	Bank
+		* Marble tile floor
+		* white painted walls
+		* wooden desk
+		* wooden chair + leather cushions 
+		* White metallic tills
+		* Queue Dividers (Metal polls + velvet rope)
+	* Vault
+		* Gray Metal Walls + floors
+		* Metal Gray Vault door
+		* Shelves made up of safety deposit boxes
+		* White plastic computer towers + Monitor
+	* Shops
+		* White Metal Aisles + Items on shelves
+		* White metal tills
+	* Docks
+		* Yellow Metal Crane
+		* Maroon Metal Ship + White Metal Top
+		* Varried Coloured Cargo + livery + test
+		* Storage building corrugated metal walls + roofs
+
+	* Train / TrainLine
+	* train track
+		* Interior 
+	* Patterned seats  
+	* Metal poll (colour?)
+	* Gray Metal doors
+		* Exterior
+	* Gray/Silver Metal (Spray cans)
+	* Train station 
+	* White tile + walls
+	* concrete floors (gray)
+	* White tile support beams
+	* wooden long chain 
+	* train tracks
+
 ###Heroes and Villains 
 
 ------------------------
@@ -60,8 +224,7 @@ Jack Prendergast is a 17 year old orphan from new city. With a troubled backgrou
 
 Player controls
 ---------------
-The platform we hope to produce the game for is the Xbox 360. Below is an image of the Xbox controller along with our control configuration for the game. 
-![](http://pective.com/m/xbox-360-controller-2)
+This game will be created using the Unity3D platform, hence: Will be avaliable for all major platforms.
 
 Characters
 ----------
@@ -121,31 +284,25 @@ Pickups
 -------
 Through points of the games the player will be able to pick up certain things.  Below are the most important things we hope to include into the main gameplay.
  
- http://www.firstaidwarehouse.co.uk/xpp-rh2_first_aid_kit.html
-
-
-
+![](http://www.firstaidwarehouse.co.uk/pic/280x280/00/24/rh2_first_aid_kit_24.jpg)
 
 The game will include various combats and so our player is likely to become injured at times. We will include a health pick up which will increase the player’s health by 25%.
  
-http://www.bocn.co.uk/vbforum/threads/50822-40mm-Ammunition
+![](http://i43.photobucket.com/albums/e390/edstorey/AmmunitionBox18Cartridges40mmLVP-1.jpg)
 
+Ammunition boxes will be placed throughout the city for our characters to pick up and use with their weapons.
 
+### Vehicles
 
+# THIS NEEDS DOING
 
-
-Ammunition boxes will be placed throughout the city for our characters to pick up and use with their weapons. Vehicles
-
-Level design 
+### Level design 
 Using a feature in blender we hope to initially create a city. Then taking it into 3ds max we hope to create a number of buildings and environments that the player can interact with. 
 Some of these include banks, tower blocks, apartments and a subway station.
 Some inspiration for the subway station will come from the game Max Payne:
- 
 
+[http://maxpayne.wikia.com/wiki/Roscoe_Street_Station](http://maxpayne.wikia.com/wiki/Roscoe_Street_Station)
 
+![](http://images3.wikia.nocookie.net/__cb20110430172632/maxpayne/images/thumb/8/83/MaxPayne_2011-04-30_19-08-34-56.jpg/282px-MaxPayne_2011-04-30_19-08-34-56.jpg)
 
-
-
-
-
-http://maxpayne.wikia.com/wiki/Roscoe_Street_Station
+![](http://images2.wikia.nocookie.net/__cb20110430174359/maxpayne/images/thumb/a/a5/Max_Payne.The_Movie_DVDRip_NL_Subs_-dJimo_018_0002.jpg/400px-Max_Payne.The_Movie_DVDRip_NL_Subs_-dJimo_018_0002.jpg)
