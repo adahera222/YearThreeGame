@@ -5,6 +5,7 @@ public class GameController : MonoBehaviour {
 
 	float timeScale = 1f;
 	bool multiplayer, mouseVisable = false;
+	string currObjective = ""; // Should relate to the triggerzone.triggerName
 	
 	void Update()
 	{
@@ -35,5 +36,15 @@ public class GameController : MonoBehaviour {
 	public void setMouseVisable(bool mouseVisable)
 	{
 		this.mouseVisable = mouseVisable;
+	}
+	
+	public void setCurrObjective(string currObjective)
+	{
+		this.currObjective = currObjective;	
+	}
+	
+	public string getCurrObjective()
+	{
+		return this.currObjective;
 	}
 }
