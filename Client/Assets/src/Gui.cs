@@ -3,8 +3,12 @@ using System.Collections;
 
 public class Gui : MonoBehaviour {
 	
-	public Texture2D guiBarBg, guiBarHealth, guiBarArmour, guiBarFg;
-	public Texture2D guiXpBg, guiXpMain;
+	public Texture2D guiBarBg;
+	public Texture2D guiBarHealth;
+	public Texture2D guiBarArmour;
+	public Texture2D guiBarFg;
+	public Texture2D guiXpBg;
+	public Texture2D guiXpMain;
 	
 	private int health = 100;
 	private int armour = 0;

@@ -21,13 +21,13 @@ public class PlayerController : ABSTRACT_PlayerEntity {
 		debugging();
 	}
 	
-	void logic()
+	protected void logic()
 	{
 		if (xp > xpToLevel)
 			nextLevel();
 	}
 	
-	void movement()
+	protected void movement()
 	{
 		float vx = Input.GetAxis("Horizontal");
 		float vz = Input.GetAxis("Vertical");
@@ -43,7 +43,7 @@ public class PlayerController : ABSTRACT_PlayerEntity {
 		transform.Rotate(new Vector3(0,mx * turnRate,0));
 	}
 	
-	void abilities()
+	protected void abilities()
 	{
 		// Keyboard keys 1->4 (skills)
 		if (Input.GetKey(KeyCode.Alpha1))
@@ -61,7 +61,7 @@ public class PlayerController : ABSTRACT_PlayerEntity {
 		}
 	}
 	
-	void debugging()
+	protected void debugging()
 	{
 		if (Input.GetKey(KeyCode.Keypad0)) health--;
 		if (Input.GetKey(KeyCode.Keypad1)) health++;

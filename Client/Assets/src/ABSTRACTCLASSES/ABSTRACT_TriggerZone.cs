@@ -8,9 +8,8 @@ public class ABSTRACT_TriggerZone : MonoBehaviour {
 	 * It also creates the collisionMesh and defines it's height and radius (the collision mesh is cylindrical)
 	 */
 	
-	string triggerName = "";
-	
-	CapsuleCollider col = new CapsuleCollider();
+	protected string triggerName = "";
+	protected CapsuleCollider col = new CapsuleCollider();
 	
 	void __init__(float radius)
 	{

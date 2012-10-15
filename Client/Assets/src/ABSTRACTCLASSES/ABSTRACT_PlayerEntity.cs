@@ -15,17 +15,19 @@ public class ABSTRACT_PlayerEntity : MonoBehaviour {
 	
 	protected void __init__(int health, int armour)
 	{
+		// This starts you at level 1
 		this.health = health;
 		this.armour = armour;
 		this.level = 0;
 		nextLevel();
 	}
 	
-	protected void __init__(int level, int health, int armour)
+	protected void __init__(int health, int armour, int level)
 	{
+		// This starts you at level x
+		__init__(health, armour);
 		this.level = level - 1;
 		nextLevel();
-		__init__(health, armour);	
 	}
 	
 	protected void nextLevel()
@@ -51,20 +53,10 @@ public class ABSTRACT_PlayerEntity : MonoBehaviour {
 		return data;
 	}
 	
-	// GETTERS SETTERS
-	protected int getHealth()
-	{
-		return health;
-	}
-	
+	// SETTERS
 	protected void setHealth(int health)
 	{
 		this.health = health;
-	}
-	
-	protected int getArmour()
-	{
-		return armour;	
 	}
 	
 	protected void setArmour(int armour)
@@ -72,14 +64,9 @@ public class ABSTRACT_PlayerEntity : MonoBehaviour {
 		this.armour = armour;	
 	}
 	
-	protected int getLevel()
+	protected void setLevel(int level)
 	{
-		return level;	
-	}
-	
-	protected int getXp()
-	{
-		return xp;	
+		this.level = level;
 	}
 	
 	protected void setXp(int xp)
